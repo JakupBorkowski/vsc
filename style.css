@@ -6,7 +6,7 @@
 
 .banner{
     width: 100%;
-    height:100%;
+    height: 100%;
     background-image:linear-gradient(rgba(0,0,0,0.75),rgb(0,0,0,0.75)),url(background.jpg);
     background-size: cover;
     background-position: center;
@@ -57,7 +57,7 @@
     content: '';
     height: 3px;
     width:0%;
-    background-color: rgba(71.4,200.4,242.9,1);;
+    background-color: rgba(71.4,200.4,242.9,1);
     position: absolute;
     left: 0;
     bottom: -10px;
@@ -72,29 +72,37 @@
 
 .content{
     width: 70%;
-    margin: 0 auto;
     text-align: center;
     color: white;
+    transform: translateY(0%);
+    
 }
 
 .content h1{
-    font-size: 70px;
+    font-size: 40px;
 }
 
 .content p{
     margin: 20px auto;
     font-weight: 100;
-    line-height: 25px;;
+    line-height: 25px;
+}
+.test{
+    max-width: 1140px;
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    color: white;
 }
 
 button{
     width: 150px;
     padding: 13px 0;
     text-align: center;
-    margin: 15px 10px 50px 0px;
+    margin: 20px 10px 0px 0px;
     border-radius:25px;
     font-weight: bold;
-    border: 2px solid rgba(71.4,200.4,242.9,1);;
+    border: 2px solid rgba(71.4,200.4,242.9,1);
     background: transparent;
     color: white;
     cursor: pointer;
@@ -103,15 +111,15 @@ button{
 }
 
 span{
-    background: rgba(71.4,200.4,242.9,1);;
+    background: rgba(71.4,200.4,242.9,1);
     height: 100%;
-    width: 0;
+    width: 0%;
     border-radius: 25px;
     position: absolute;
     left: 0;
     bottom: 0;
     z-index: -1;
-    transition: 0.5s;
+    transition: 0.75s;
 }
 
 button:hover span{
@@ -126,6 +134,7 @@ a:is(:link,:active,:visited).active{
     color: white;
     font-size: larger;
 }
+
 .logopp{
     max-width: 300px;
 }
@@ -142,7 +151,7 @@ a:is(:link,:active,:visited).active{
     grid-template-columns: repeat(auto-fit,minmax(390px,1fr));
     place-items: center;
     grid-column-gap: 20px;
-    grid-row-gap: 20pxl;
+    grid-row-gap: 20px;
     flex-wrap: wrap;
 }
 
