@@ -6,7 +6,7 @@
 
 .banner{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-image:linear-gradient(rgba(0,0,0,0.75),rgb(0,0,0,0.75)),url(background.jpg);
     background-size: cover;
     background-position: center;
@@ -200,24 +200,66 @@ a:is(:link,:active,:visited).active{
 .hidden{
     opacity: 0;
     filter:blur(5px);
-    transform: translateX(-100%);
-    transition: all 2s;
+    transition: all 1.5s;
 }
 .show{
     opacity: 1;
     filter: blur(0);
-    transform: translateX(0);
 }
 
 .box{
-    width: 450px;
+    width: 800px;
     background-color: rgba(0,0,0,0.4);
     padding: 40px;
     border-radius: 50px;;
     text-align: center;
-    margin: 100px auto;
+    margin-top: 2%;
+    color: white;
+
+    font-family: 'Century Gothic', sans-serif;
+    line-height: 1.9;
 }
 
-.featured-item p{
+.box-img{
+    border-radius: 50%;
+    width:250px;
+    height:250px;
+}
+
+.box h1{
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+
+.box h5{
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+.box p{
     text-align: justify;
+}
+
+.box ul{
+    margin:0;
+    padding: 0;
+
+}
+
+.box li{
+    display:inline-block;
+    margin: 10px;
+    list-style: none;
+}
+
+.box li a i{
+    color: white;
+    text-decoration: none;
+    font-size: 60px;
+}
+
+.box li a i:hover{
+    color: rgba(71.4,200.4,242.9,1);
 }
